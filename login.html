@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login — ဇော်ဘဏ် (Zaw Bank)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="login">
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">ဇ</span><span>ဇော်ဘဏ် <small>ZAW BANK</small></span></a>
+    <button class="menu-toggle" aria-label="မီနူးဖွင့်ရန်" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="personal.html" data-page="personal">ပုဂ္ဂိုလ်ရေးဘဏ်လုပ်ငန်း</a>
+      <a href="business.html" data-page="business">စီးပွားရေးဘဏ်လုပ်ငန်း</a>
+      <a href="digital.html" data-page="digital">ဒစ်ဂျစ်တယ်ဘဏ်လုပ်ငန်း</a>
+      <a href="rates.html" data-page="rates">ငွေလဲနှုန်း</a>
+      <a href="about.html" data-page="about">အကြောင်း</a>
+      <a href="contact.html" data-page="contact">ဆက်သွယ်ရန်</a>
+      <a href="login.html" class="btn btn-gold btn-sm">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="wrap">
+      <div class="form-card">
+        <h2 class="center">အကောင့်ဝင်ရန်</h2>
+        <p class="center" style="color:var(--muted);font-size:.9rem;margin-bottom:20px">ဇော်ဘဏ် အင်တာနက်ဘဏ်လုပ်ငန်း (Demo)</p>
+        <div class="notice notice-gold">
+          <strong>Demo အသိပေးချက်:</strong> မည်သည့်အချက်အလက်မဆို ရိုက်ထည့်နိုင်ပါသည် — မည်သည့်နေရာသို့မှ ပေးပို့ခြင်းမရှိပါ။ အစစ်အမှန် စကားဝှက်များ <u>လုံးဝမရိုက်ထည့်ပါနှင့်</u>။
+        </div>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="l-user">အသုံးပြုသူအမည်</label>
+            <input type="text" id="l-user" name="username" placeholder="ဥပမာ: demo-user" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="l-pass">စကားဝှက်</label>
+            <input type="password" id="l-pass" name="password" placeholder="မည်သည့်စာလုံးမဆို ရသည်" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%">ဝင်ရောက်ရန်</button>
+        </form>
+        <p class="center mt" style="font-size:.85rem">အကောင့်မရှိသေးဘူးလား? <a href="contact.html">အကောင့်ဖွင့်ရန် စုံစမ်းပါ</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h4>ဇော်ဘဏ်</h4>
+        <a href="about.html">ကျွန်ုပ်တို့အကြောင်း</a>
+        <a href="about.html">ဘဏ်ခွဲများ</a>
+        <a href="contact.html">ဆက်သွယ်ရန်</a>
+      </div>
+      <div>
+        <h4>ဝန်ဆောင်မှုများ</h4>
+        <a href="personal.html">ပုဂ္ဂိုလ်ရေးဘဏ်လုပ်ငန်း</a>
+        <a href="business.html">စီးပွားရေးဘဏ်လုပ်ငန်း</a>
+        <a href="digital.html">ဒစ်ဂျစ်တယ်ဘဏ်လုပ်ငန်း</a>
+      </div>
+      <div>
+        <h4>အချက်အလက်</h4>
+        <a href="rates.html">ငွေလဲနှုန်း</a>
+        <a href="rates.html">အတိုးနှုန်းများ</a>
+        <a href="digital.html">လုံခြုံရေးအကြံပြုချက်များ</a>
+      </div>
+      <div>
+        <h4>အကောင့်</h4>
+        <a href="login.html">Login</a>
+        <a href="contact.html">အကောင့်ဖွင့်ရန်</a>
+      </div>
+    </div>
+    <div class="disclaimer">ဤသည်မှာ demo website ဖြစ်သည် — ဘဏ်အစစ်မဟုတ်၊ နှုန်းထားနှင့် အချက်အလက်များမှာ နမူနာသာဖြစ်သည်။</div>
+    <p class="copyright">© <span class="js-year"></span> ဇော်ဘဏ် (Zaw Bank) — Demo သရုပ်ပြဝက်ဘ်ဆိုက်</p>
+  </div>
+</footer>
+
+<div class="toast" id="demo-toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

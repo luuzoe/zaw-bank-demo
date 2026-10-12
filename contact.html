@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ဆက်သွယ်ရန် — ဇော်ဘဏ် (Zaw Bank)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="logo" href="index.html"><span class="logo-mark">ဇ</span><span>ဇော်ဘဏ် <small>ZAW BANK</small></span></a>
+    <button class="menu-toggle" aria-label="မီနူးဖွင့်ရန်" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="personal.html" data-page="personal">ပုဂ္ဂိုလ်ရေးဘဏ်လုပ်ငန်း</a>
+      <a href="business.html" data-page="business">စီးပွားရေးဘဏ်လုပ်ငန်း</a>
+      <a href="digital.html" data-page="digital">ဒစ်ဂျစ်တယ်ဘဏ်လုပ်ငန်း</a>
+      <a href="rates.html" data-page="rates">ငွေလဲနှုန်း</a>
+      <a href="about.html" data-page="about">အကြောင်း</a>
+      <a href="contact.html" data-page="contact">ဆက်သွယ်ရန်</a>
+      <a href="login.html" class="btn btn-gold btn-sm">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>ဆက်သွယ်ရန်</h1>
+      <p>မေးမြန်းလိုတာရှိရင် အောက်ပါဖောင်ဖြည့်ပြီး ပေးပို့လိုက်ပါ။</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="two-col">
+        <div>
+          <h2>ဆက်သွယ်ရန် အချက်အလက်များ</h2>
+          <p class="lead">အောက်ပါအချက်အလက်များမှာ နမူနာသရုပ်ပြအတွက်သာ ဖြစ်သည်။</p>
+          <div class="branch">
+            <h3>ဖောက်သည်ဝန်ဆောင်မှုဌာန (နမူနာ)</h3>
+            <p>Hotline: ၀၉-၀၀၀ ၀၀၀ ၀၀၀ <span class="tag-sample">နမူနာဖုန်းနံပါတ်</span><br>
+               ရုံးဖုန်း: ၀၁-၀၀၀ ၀၀၀ <span class="tag-sample">နမူနာ</span><br>
+               အီးမေးလ်: demo@zawbank.example <span class="tag-sample">နမူနာ</span></p>
+          </div>
+          <div class="branch">
+            <h3>ရုံးချုပ် (နမူနာလိပ်စာ)</h3>
+            <p>အမှတ် ၁၂၃၊ ဗိုလ်အောင်ကျော်လမ်း၊ ကျောက်တံတားမြို့နယ်၊ ရန်ကုန်မြို့<br>
+               ဖွင့်ချိန်: တနင်္လာ–သောကြာ၊ နံနက် ၉:၀၀ – ညနေ ၄:၀၀</p>
+          </div>
+        </div>
+        <div>
+          <div class="form-card">
+            <div class="notice notice-gold" id="contact-demo-notice" style="display:none">
+              <strong>Demo အသိပေးချက်:</strong> ဤဖောင်သည် သရုပ်ပြအတွက်သာ ဖြစ်သည် — သင့်အချက်အလက်များ မည်သည့်နေရာသို့မှ ပေးပို့ခြင်းမရှိပါ၊ သိမ်းဆည်းခြင်းလည်း မရှိပါ။
+            </div>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="c-name">အမည်</label>
+                <input type="text" id="c-name" name="name" placeholder="သင့်အမည်" required>
+              </div>
+              <div class="form-group">
+                <label for="c-phone">ဖုန်းနံပါတ်</label>
+                <input type="tel" id="c-phone" name="phone" placeholder="၀၉-xxx xxx xxx" required>
+              </div>
+              <div class="form-group">
+                <label for="c-email">အီးမေးလ်</label>
+                <input type="email" id="c-email" name="email" placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="c-subject">အကြောင်းအရာ</label>
+                <select id="c-subject" name="subject">
+                  <option>အကောင့်ဖွင့်လိုခြင်း</option>
+                  <option>ချေးငွေစုံစမ်းလိုခြင်း</option>
+                  <option>ကတ်ဝန်ဆောင်မှု</option>
+                  <option>အခြား</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="c-msg">မက်ဆေ့ခ်ျ</label>
+                <textarea id="c-msg" name="message" rows="4" placeholder="မေးမြန်းလိုသည်များကို ရေးသားပါ…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-teal" style="width:100%">ပေးပို့ရန်</button>
+              <p class="center" style="font-size:.8rem;color:var(--muted);margin-top:10px">Demo ဖောင်သာ ဖြစ်သည် — ပေးပို့ခြင်းမရှိပါ။</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h4>ဇော်ဘဏ်</h4>
+        <a href="about.html">ကျွန်ုပ်တို့အကြောင်း</a>
+        <a href="about.html">ဘဏ်ခွဲများ</a>
+        <a href="contact.html">ဆက်သွယ်ရန်</a>
+      </div>
+      <div>
+        <h4>ဝန်ဆောင်မှုများ</h4>
+        <a href="personal.html">ပုဂ္ဂိုလ်ရေးဘဏ်လုပ်ငန်း</a>
+        <a href="business.html">စီးပွားရေးဘဏ်လုပ်ငန်း</a>
+        <a href="digital.html">ဒစ်ဂျစ်တယ်ဘဏ်လုပ်ငန်း</a>
+      </div>
+      <div>
+        <h4>အချက်အလက်</h4>
+        <a href="rates.html">ငွေလဲနှုန်း</a>
+        <a href="rates.html">အတိုးနှုန်းများ</a>
+        <a href="digital.html">လုံခြုံရေးအကြံပြုချက်များ</a>
+      </div>
+      <div>
+        <h4>အကောင့်</h4>
+        <a href="login.html">Login</a>
+        <a href="contact.html">အကောင့်ဖွင့်ရန်</a>
+      </div>
+    </div>
+    <div class="disclaimer">ဤသည်မှာ demo website ဖြစ်သည် — ဘဏ်အစစ်မဟုတ်၊ နှုန်းထားနှင့် အချက်အလက်များမှာ နမူနာသာဖြစ်သည်။</div>
+    <p class="copyright">© <span class="js-year"></span> ဇော်ဘဏ် (Zaw Bank) — Demo သရုပ်ပြဝက်ဘ်ဆိုက်</p>
+  </div>
+</footer>
+
+<div class="toast" id="demo-toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
